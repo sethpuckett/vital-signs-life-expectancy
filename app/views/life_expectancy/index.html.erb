@@ -1,8 +1,21 @@
-<h1>Vital Signs: Life Expectancy By County</h1>
-<p>Life expectancy refers to the average number of years a newborn is expected to live if mortality patterns remain the same. The measure reflects the mortality rate across a population for a point in time.</p>
-<p>Data Source: State of California, Department of Health: Death Records (1990-2013)</p>
-
-<div id='life-expectancy-table'></div>
+<div id="wrapper">
+  <header>
+    <h1>Vital Signs: Life Expectancy By County</h1>
+    <p>Life expectancy refers to the average number of years a newborn is expected to live if mortality patterns remain the same. The measure reflects the mortality rate across a population for a point in time.</p>
+    <p>Data Source: State of California, Department of Health: Death Records (1990-2013)</p>
+  </header>
+  <div id="content">
+    <div class="instructions">Click headers to sort. Use textboxes to filter.</div>
+    <div id='life-expectancy-table'></div>
+    <div class="instructions">Click county names to hide/show values in graph.</div>
+    <div id='life-expectancy-graph'>
+      <%= line_chart(@chart_data, min: 70, max: 85) %>
+    </div>
+  </div>
+  <footer>
+    <p>Data provided by <a href="https://www.vitalsigns.mtc.ca.gov/">Vital Signs</a>
+  </footer>
+</div>
 
 <script>
   $('#life-expectancy-table').WATable({

@@ -2,9 +2,10 @@
 
 This application visualizes data from the Vital Signs life expectancy data set found [here](https://data.bayareametro.gov/dataset/Vital-Signs-Life-Expectancy-by-county/g26a-g4jw).
 
-## Architecture
+## Architecture & Dependencies
 
 - Ruby on Rails v. 5
+- [WATable](https://wootapa-watable.appspot.com/)
 - [Chartkick](https://chartkick.com/)
 
 ## Prerequisites
