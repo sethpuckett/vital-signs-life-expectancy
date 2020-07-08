@@ -4,9 +4,11 @@ This application visualizes data from the Vital Signs life expectancy data set f
 
 ## Architecture & Dependencies
 
-- Ruby on Rails v. 5
-- [WATable](https://wootapa-watable.appspot.com/)
-- [Chartkick](https://chartkick.com/)
+- [Ruby on Rails](https://rubyonrails.org/) v. 5
+- [WATable](https://wootapa-watable.appspot.com/) (Sortable tables)
+- [Chartkick](https://chartkick.com/) (Pretty graphs)
+- [Rubocop](https://github.com/rubocop-hq/rubocop) (Linter)
+- [Rspec](https://github.com/rspec/rspec-rails) (Tests)
 
 ## Prerequisites
 
