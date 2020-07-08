@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <th>County</th>
+    <th>Year</th>
+    <th>Life Expectancy</th>
+  </tr>
+  <% @dataset.each do |row| %>
+    <tr>
+      <td><%= row[:county] %></td>
+      <td><%= row[:year] %></td>
+      <td><%= row[:life_expectancy] %></td>
+    </tr>
+  <% end %>
+</table>
+
+<!-- <%= line_chart @dataset.group_by { |d| d[:county] } %> -->
