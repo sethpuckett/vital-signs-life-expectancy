@@ -67,7 +67,7 @@ Rails apps comes with a lot of cruft by default. If you want to understand how t
 - `app/gateways/vital_signs_gateway.rb`
 - `app/views/life_expectancy/index.html.erb`
 - `app/assets/stylesheets/application.scss`
-- `config/routes/rb`
+- `config/routes.rb`
 - `config/settings.yml`
 
 ## To do
