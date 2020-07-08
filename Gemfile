@@ -15,6 +15,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'bootstrap', '~> 4.5.0'
 gem 'chartkick'
+gem 'config'
 gem 'httparty'
 gem 'jquery-rails'
 

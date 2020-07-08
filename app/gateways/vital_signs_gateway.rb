@@ -1,12 +1,14 @@
 class VitalSignsGateway
   class << self
     def life_expectancy
-      response = HTTParty.get(life_expectancy_uri)
+      response = HTTParty.get(Settings.vital_signs.life_expectancy_url,  headers: headers)
       JSON.parse(response.body, symbolize_names: true)
     end
 
-    def life_expectancy_uri
-      'https://data.bayareametro.gov/resource/g26a-g4jw.json'
+    def headers
+      {
+        'X-App-Token' => Settings.vital_signs.app_token
+      }
     end
   end
 end
