@@ -78,3 +78,4 @@ I cut some corners because this is a demo app. Here are some potential enhanceme
   - Error handling on API responses
   - More tests
   - Move Javascript 3rd-party library config out of `.html.erb` files
+  - Remove all the unused rails code & dependencies that come by default
