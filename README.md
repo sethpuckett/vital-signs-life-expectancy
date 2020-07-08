@@ -14,6 +14,8 @@ This application visualizes data from the Vital Signs life expectancy data set f
 
 ## Prerequisites
 
+The only thing you need to build and run this app locally is Docker.
+
 - [Docker](https://www.docker.com/products/docker-desktop)
 
 ## Building the application
