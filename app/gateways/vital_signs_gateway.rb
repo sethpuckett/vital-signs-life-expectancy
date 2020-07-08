@@ -1,15 +1,8 @@
 class VitalSignsGateway
   class << self
     def life_expectancy
-      response = HTTParty.get(life_expectancy_uri, headers: headers)
+      response = HTTParty.get(life_expectancy_uri)
       JSON.parse(response.body, symbolize_names: true)
-    end
-
-    def headers
-      {
-        "Content-Type": 'application/json',
-        "Accept": 'application/json'
-      }
     end
 
     def life_expectancy_uri

@@ -1,16 +1,35 @@
-<table>
-  <tr>
-    <th>County</th>
-    <th>Year</th>
-    <th>Life Expectancy</th>
-  </tr>
-  <% @dataset.each do |row| %>
-    <tr>
-      <td><%= row[:county] %></td>
-      <td><%= row[:year] %></td>
-      <td><%= row[:life_expectancy] %></td>
-    </tr>
-  <% end %>
-</table>
+<h1>Vital Signs: Life Expectancy By County</h1>
+<p>Life expectancy refers to the average number of years a newborn is expected to live if mortality patterns remain the same. The measure reflects the mortality rate across a population for a point in time.</p>
+<p>Data Source: State of California, Department of Health: Death Records (1990-2013)</p>
 
-<!-- <%= line_chart @dataset.group_by { |d| d[:county] } %> -->
+<div id='life-expectancy-table'></div>
+
+<script>
+  $('#life-expectancy-table').WATable({
+    pageSizes: [10, 25, 100],
+    filter: true,
+    data: {
+      cols: {
+        county: {
+          index: 1,
+          type: "string",
+          friendly: "County",
+          placeHolder: "e.g. Napa County"
+        },
+        year: {
+          index: 2,
+          type: "number",
+          friendly: "Year",
+          placeHolder: "e.g. =1998"
+        },
+        life_expectancy: {
+          index: 3,
+          type: "number",
+          friendly: "Life Expectancy",
+          placeHolder: "e.g. 78..80"
+        }
+      },
+      rows: <%= raw @dataset.to_json %>
+    }
+  });
+</script>

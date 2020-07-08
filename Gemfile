@@ -13,7 +13,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
-gem "chartkick"
+gem 'bootstrap', '~> 4.5.0'
+gem 'chartkick'
 gem 'httparty'
 gem 'jquery-rails'
 
