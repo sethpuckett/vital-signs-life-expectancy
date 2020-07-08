@@ -4,7 +4,7 @@
 
 This application visualizes data from the Vital Signs life expectancy data set found [here](https://data.bayareametro.gov/dataset/Vital-Signs-Life-Expectancy-by-county/g26a-g4jw).
 
-## Architecture & Dependencies
+## Architecture & dependencies
 
 - [Ruby on Rails](https://rubyonrails.org/) v. 5
 - [WATable](https://wootapa-watable.appspot.com/) (Sortable tables)
@@ -26,7 +26,7 @@ docker-compose build
 
 ## Starting & stopping the application
 
-If you've already completed the build step above the application can be started with:
+When you've completed the build step above you can start the application with:
 ```
 docker-compose up -d
 ```
@@ -36,7 +36,7 @@ When you're finished clean up the containers with:
 docker-compose down
 ```
 
-## Common Tasks
+## Common tasks
 
 Run Rubocop (linter):
 ```
@@ -48,7 +48,7 @@ Run tests:
 docker-compose run web rspec
 ```
 
-## Code Features
+## Code features
 
 - Separation of concerns, with display & logic separated into views, controllers, and gateways for external API access
 - Vital Signs API integration with configurable API token
@@ -70,7 +70,7 @@ Rails apps comes with a lot of cruft by default. If you want to understand how t
 - `config/routes/rb`
 - `config/settings.yml`
 
-## To Do
+## To do
 
 I cut some corners because this is a demo app. Here are some potential enhancements:
 
