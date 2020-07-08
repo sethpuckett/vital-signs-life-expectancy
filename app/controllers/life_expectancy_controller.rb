@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Retrieve and display Vital Signs life expectancy data
 class LifeExpectancyController < ApplicationController
   def index
     @dataset = VitalSignsGateway.life_expectancy

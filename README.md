@@ -14,7 +14,7 @@ This application visualizes data from the Vital Signs life expectancy data set f
 
 ## Building the application
 
-You need to build the application before you can run it. This only needs to be done once.
+You need to build the application before you can run it. This may take a couple minutes, but it only needs to be done once.
 
 ```
 docker-compose build
