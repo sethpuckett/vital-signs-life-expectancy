@@ -50,6 +50,7 @@ docker-compose run web rspec
 
 ## Code features
 
+- Dockerized solution for easy deployment
 - Separation of concerns, with display & logic separated into views, controllers, and gateways for external API access
 - Vital Signs API integration with configurable API token
 - Sortable, filterable data table via WATable
