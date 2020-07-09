@@ -28,17 +28,18 @@ docker-compose build
 
 ## Starting & stopping the application
 
-When you've completed the build step above you can start the application with:
+When you've completed the build step above you can start the application with the following command. If you want the app to run in attached mode (i.e. not in the background) you can drop the `-d` flag.
 ```
 docker-compose up -d
 ```
+
+The application will be accessible at `http://localhost:3000`.
+
 
 When you're finished clean up the containers with:
 ```
 docker-compose down
 ```
-
-The application will be accessible at `http://localhost:3000`.
 
 ## Common tasks
 
