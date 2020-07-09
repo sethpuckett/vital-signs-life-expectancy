@@ -38,6 +38,8 @@ When you're finished clean up the containers with:
 docker-compose down
 ```
 
+The application will be accessible at `http://localhost:3000`.
+
 ## Common tasks
 
 Run Rubocop (linter):
